@@ -1,0 +1,148 @@
+:root {
+    --brown1: #453528;
+    --brown2: #372A21;
+    --green: #898B06;
+    --red: #D63A25;
+    --yellow: #DC8409;
+    --white: #fff;
+    --fonte1: font-family: 'Roboto Slab', serif;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;    
+}
+  
+.customContent {
+    height: 88px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--brown1);
+    padding-left: 10rem;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.customContent .custom_List_Menu {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    
+    
+}
+
+.customContent .custom_List_Menu .my_Li .my_A{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    transition: all 200ms ease-in;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.customContent .custom_List_Menu .my_Li .my_A:hover{
+    background-image: linear-gradient(0deg, var(--green), var(--brown1));
+    color: var(--brown2);
+    transition: 0.1s;
+    border-bottom: 4px solid #ffc506;  
+    color: #ffc506;
+}
+
+
+
+
+@media (max-width: 870px) {
+    .customContent {
+        justify-content: space-between;
+        padding: 0px 5px;
+    }
+
+    .customContent .custom_List_Menu{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 6px auto;
+
+        transition-duration: 0.5s ;
+    }
+
+    .menu_Toggle {
+        width: 40px;
+        height: 30px;
+
+    }
+
+    .customContent.on {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: var(--brown1);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customContent.on .logo {
+        display: none;
+    }
+
+    .customContent.on .menu_Toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .customContent.on .custom_List_Menu {
+        display: block;
+        
+    }
+
+    .customContent.on .custom_List_Menu .my_Li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .customContent.on .custom_List_Menu .my_Li .my_A {
+        font-size: 1rem;
+        display: block;
+    }
+
+
+    .customContent.on .menu_Toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+    .customContent.on .menu_Toggle .two {
+        opacity: 0;
+    }
+
+    .customContent.on .menu_Toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+}

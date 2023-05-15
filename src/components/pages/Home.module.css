@@ -1,0 +1,24 @@
+
+:root {
+    --brown1: #453528;
+    --brown2: #372A21;
+    --green: #898B06;
+    --red: #D63A25;
+    --yellow: #DC8409;
+    --white: #fff;
+    --fonte1: font-family: 'Roboto Slab', serif;
+  }
+
+
+
+.my_body{
+
+    background-color: var(--brown1);
+}
+
+
+
+.my_Container {
+    margin-top: 300px;
+    
+}

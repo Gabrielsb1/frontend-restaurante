@@ -1,0 +1,28 @@
+
+.actor_Cards_Container{
+    align-items: center; 
+}
+
+.cards_content{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: -50px;
+    height: 200px;
+}
+
+.card{
+    width: 215px;
+    height: 189px;
+    background-position: 50% 50%;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+.card:hover{
+    width: 280px;
+    height: 240px;
+    transition: all 0.2s;
+}
