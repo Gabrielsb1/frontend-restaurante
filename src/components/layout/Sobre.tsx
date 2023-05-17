@@ -1,4 +1,4 @@
-import styles from './Sobre.module.css';;
+import styles from './Sobre.module.css';
 import foto_chefe from '../img/Chefe.png';
 import card1 from '../img/galinha mineira.png';
 import card2 from '../img/baião de dois.png';

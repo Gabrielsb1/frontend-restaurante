@@ -8,24 +8,24 @@ import Sobre from '../layout/Sobre';
 
 
 
+
+
 function Home() {
 
     return (
 
-    
         <div className="my_body">
+            
             <Carrosel />
             <Cards />
             <div className={styles.my_Container}></div>
 
-            <Sobre />
+                <Sobre  />
             
           <Footer />
           
         </div>
       
-
-       
     );
 }
 
