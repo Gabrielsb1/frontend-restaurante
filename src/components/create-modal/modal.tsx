@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useFoodDataMutate } from '../hooks/useFoodDataMutate';
 import { FoodData } from '../interface/FoodData';
-
-import "./modal.css";
+import styles from "./modal.module.css";
 
 interface InputProps {
     label: string,
@@ -43,18 +42,27 @@ export function CreateModal({ closeModal }: ModalProps){
         closeModal();
     }, [isSuccess])
 
+    const handleGoBack = () => {
+        closeModal();
+    }
+
     return(
-        <div className="modal-overlay">
-            <div className="modal-body">
+        <div className={styles.modal_overlay}>
+            <div className={styles.modal_body}>
                 <h2>Cadastre um novo item no cardápio</h2>
-                <form className="input-container">
+                <form className={styles.input_container}>
                     <Input label="title" value={title} updateValue={setTitle}/>
                     <Input label="price" value={price} updateValue={setPrice}/>
                     <Input label="image" value={urlimg} updateValue={setImage}/>
                 </form>
-                <button onClick={submit} className="btn-secondary">
-                    {isLoading ? 'postando...' : 'postar'}
-                </button>
+                <div className={styles.button_container}>
+                    <button onClick={submit} className={`${styles.btn_secondary} ${styles.btn_submit}`}>
+                        {isLoading ? 'postando...' : 'Postar'}
+                    </button>
+                    <button onClick={handleGoBack} className={`${styles.btn_secondary} ${styles.btn_back}`}>
+                        Voltar
+                    </button>
+                </div>
             </div>
         </div>
     )

@@ -1,7 +1,9 @@
 .my_Cardapio_Main {
-    display: flex;
-    padding: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  margin: auto;
+  padding: 30px;
+  max-width: 1500px;
+  flex-wrap: wrap;
     
   }
 
@@ -39,25 +41,31 @@
   .descricao_prato {
     color: #c5c5c5;
     padding: 5px;
+    margin-bottom: 10px;
   }
 
-  .button_carrinho {
-    padding: 10px 20px;
-    border: none;
-    background-color: #DC8409;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
   
-  .button_carrinho:hover {
-    background-color: #2da605;
-  }
+  
 
   p {
     color: white;
+    margin-bottom: 10px;
   }
+
+   
+.button_carrinho {
+  padding: 10px 20px;
+  border: none;
+  background-color: #DC8409;
+  color: white;
+  font-size: 16px;
+  border-radius: 0px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.button_carrinho:hover {
+  background-color: #e9ac05;
+}

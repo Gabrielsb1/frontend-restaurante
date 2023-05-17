@@ -18,7 +18,7 @@ export function Card({ price, urlimg, title } : CardProps){
             numquam asperiores repellendus quasi vel ipsam molestias fugit atque
             qui deserunt</p>
             <p><b>Valor: </b>R${price}</p>
-            <button className={styles.button_carrinho}>Opções</button>
+            <button className={styles.button_carrinho}>Ver Opções</button>
         </div>
     </main>
     )

@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import sobre from './Sobre';
 
 
 
@@ -26,7 +27,7 @@ function Header() {
         </div>
         <ul className={styles.custom_List_Menu}>
           <li className={styles.my_Li}> <Link to={'/'} className={styles.my_A}>Home</Link> </li>
-          <li className={styles.my_Li}> <Link to={'/sobre'} className={styles.my_A}>Sobre Nós</Link> </li>
+          <li className={styles.my_Li}><a className={styles.my_A} href="#session">Sobre nós</a></li>
           <li className={styles.my_Li}> <Link to={'/cardapio'} className={styles.my_A}>Cardápio</Link> </li>
           <li className={styles.my_Li}> <Link to={'/contato'} className={styles.my_A}>Contatos</Link> </li>
           <li className={styles.my_Li}><a className={styles.my_A} href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
@@ -39,6 +40,8 @@ function Header() {
           <div className={styles.three}></div>
         </div>
       </div>
+
+      
     </header>
     
     

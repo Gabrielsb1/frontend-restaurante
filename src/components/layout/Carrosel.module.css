@@ -4,7 +4,7 @@
     background-color: #453528;
 }
 .banner1{
-    background-image: url('../img/Banner.png');
+    background-image: url('../img/Banner3.png');
     background-position: 50% 50%;
     background-size: cover;
     max-width: 100%;
@@ -12,7 +12,7 @@
 }
 
 .banner2{
-    background-image: url('../img/Banner.png');
+    background-image: url('../img/Banner2.png');
     background-position: 50% 50%;
     background-size: cover;
     max-width: 100%;
@@ -20,7 +20,7 @@
 }
 
 .banner3{
-    background-image: url('../img/Banner.png');
+    background-image: url('../img/Banner1.png');
     background-position: 50% 50%;
     background-size: cover;
     max-width: 100%;
