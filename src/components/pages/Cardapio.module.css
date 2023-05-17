@@ -8,9 +8,10 @@
     --fonte1: font-family: 'Roboto Slab', serif;
   }
   
-
-  body {
+  
+  .my_body {
     background-color: var(--brown1);
+    min-height: 100vh;
   }
 
   .container {
